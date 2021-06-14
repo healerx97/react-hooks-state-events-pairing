@@ -5,8 +5,95 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fcd8ff;
 }
 
 .App {
   text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h5 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+}
+
+#dashed {
+  border-top: 3px solid blueviolet;
+  border-radius: 5px;
+  line-height: 5%;
+  background: #7b92f7;
+}
+.comment-box > h2,h3 {
+  margin: 20px
+  
+}
+
+.comment-box {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #ccf3fd;
+}
+.comment-box:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  width: 50%;
+  border-bottom: 1px solid blueviolet;
+}
+
+button.likeButton {
+  margin: 5px;
+  background-color: #1c87c9;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: none;
+  color: #d68fcd;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  animation: glowing 2500ms infinite;
+}
+button.commentButton {
+  margin: 5px;
+  background-color: #ffffff;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  border: none;
+  color: #8d007a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 10px;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  animation: glowing 2500ms infinite;
+}
+@keyframes glowing {
+  0% {
+    background-color: #a56eaa;
+    box-shadow: 0 0 5px #c35dcc;
+  }
+  50% {
+    background-color: #dcbfe0;
+    box-shadow: 0 0 20px #ec9af3;
+  }
+  100% {
+    background-color: #ffdbf9;
+    box-shadow: 0 0 5px #bda3c4;
+  }
 }
